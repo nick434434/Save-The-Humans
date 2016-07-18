@@ -1,0 +1,14 @@
+D:\C#\Study Projects\Save The Humans\Save The Humans\bin\Debug\Save The Humans.exe.config
+D:\C#\Study Projects\Save The Humans\Save The Humans\bin\Debug\Save The Humans.exe
+D:\C#\Study Projects\Save The Humans\Save The Humans\bin\Debug\Save The Humans.pdb
+D:\C#\Study Projects\Save The Humans\Save The Humans\obj\Debug\Save The Humans.csprojResolveAssemblyReference.cache
+D:\C#\Study Projects\Save The Humans\Save The Humans\obj\Debug\MainWindow.g.cs
+D:\C#\Study Projects\Save The Humans\Save The Humans\obj\Debug\App.g.cs
+D:\C#\Study Projects\Save The Humans\Save The Humans\obj\Debug\Save The Humans_MarkupCompile.cache
+D:\C#\Study Projects\Save The Humans\Save The Humans\obj\Debug\Save The Humans_MarkupCompile.lref
+D:\C#\Study Projects\Save The Humans\Save The Humans\obj\Debug\MainWindow.baml
+D:\C#\Study Projects\Save The Humans\Save The Humans\obj\Debug\Save The Humans.g.resources
+D:\C#\Study Projects\Save The Humans\Save The Humans\obj\Debug\Save_The_Humans.Properties.Resources.resources
+D:\C#\Study Projects\Save The Humans\Save The Humans\obj\Debug\Save The Humans.csproj.GenerateResource.Cache
+D:\C#\Study Projects\Save The Humans\Save The Humans\obj\Debug\Save The Humans.exe
+D:\C#\Study Projects\Save The Humans\Save The Humans\obj\Debug\Save The Humans.pdb
