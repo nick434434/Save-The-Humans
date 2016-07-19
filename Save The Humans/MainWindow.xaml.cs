@@ -23,7 +23,7 @@ namespace Save_The_Humans
     public partial class MainWindow : Window
     {
         Random random = new Random();
-        DispatcherTimer enemyTimer = new DispatcherTimer();
+        //DispatcherTimer enemyTimer = new DispatcherTimer();
         DispatcherTimer targetTimer = new DispatcherTimer();
         bool humanCaptured = false;
 
@@ -31,8 +31,8 @@ namespace Save_The_Humans
         {
             InitializeComponent();
 
-            enemyTimer.Tick += EnemyTimer_Tick;
-            enemyTimer.Interval = TimeSpan.FromSeconds(2);
+            //enemyTimer.Tick += EnemyTimer_Tick;
+            //enemyTimer.Interval = TimeSpan.FromSeconds(2);
 
             targetTimer.Tick += TargetTimer_Tick;
             targetTimer.Interval = TimeSpan.FromSeconds(.1);
@@ -49,7 +49,7 @@ namespace Save_The_Humans
         {
             if (!playArea.Children.Contains(gameOverText))
             {
-                enemyTimer.Stop();
+                //enemyTimer.Stop();
                 targetTimer.Stop();
                 humanCaptured = false;
                 startButton.Visibility = Visibility.Visible;
@@ -61,7 +61,7 @@ namespace Save_The_Humans
 
         private void EnemyTimer_Tick(object sender, EventArgs e)
         {
-            AddEnemy();
+            //AddEnemy();
         }
 
         private void startButton_Click(object sender, RoutedEventArgs e)
@@ -79,14 +79,15 @@ namespace Save_The_Humans
             playArea.Children.Clear();
             playArea.Children.Add(target);
             playArea.Children.Add(human);
-            enemyTimer.Start();
+            //enemyTimer.Start();
             targetTimer.Start();
+            AddEnemy();
         }
 
         private void AddEnemy()
         {
             ContentControl enemy = new ContentControl();
-            enemy.Template = Resources["EnemyTemplate"] as ControlTemplate;
+            enemy.Template = Resources["EnemyReptile"] as ControlTemplate;
             AnimateEnemy(enemy, 0, playArea.ActualWidth - 100, "(Canvas.Left)");
             AnimateEnemy(enemy, random.Next((int)playArea.ActualHeight - 100), 
                 random.Next((int)playArea.ActualHeight - 100), "(Canvas.Top)");
@@ -118,7 +119,7 @@ namespace Save_The_Humans
 
         private void human_MouseDown(object sender, MouseButtonEventArgs e)
         {
-            if (enemyTimer.IsEnabled)
+            //if (enemyTimer.IsEnabled)
             {
                 humanCaptured = true;
                 human.IsHitTestVisible = false;
@@ -139,6 +140,7 @@ namespace Save_The_Humans
                 int lvl = Convert.ToInt32(lvlCounter.Text);
                 lvl++;
                 lvlCounter.Text = lvl.ToString();
+                AddEnemy();
             }
         }
 
